@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "appjuanchoque": {
+      "hosting": {
+        "juan": [
+          "appjuanchoque"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "appjuanchoque"
+  }
+}

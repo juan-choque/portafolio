@@ -117,8 +117,13 @@
               "devServerTarget": "juan:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "juan"
 }
