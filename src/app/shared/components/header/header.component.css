@@ -1,0 +1,97 @@
+/* ********* Hero Image***** */
+
+.hero-image {
+  background-image: url(../../../../assets/resources/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-image-opacity {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-title {
+  font-size: 5.5vw;
+  color: #fff;
+}
+
+.hero-image-content {
+  width: 100%;
+  min-width: 320px;
+}
+
+/* ********* Menu***** */
+
+.menu-btn {
+  cursor: pointer;
+  background-color: var(--second-color);
+  border: 0;
+  outline: thin solid #1d75bd;
+}
+
+.menu-btn svg {
+  fill: #1d75bd;
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(66, 66, 68);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #1d75bd;
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: #1d75bd;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-btn {
+    display: none;
+  }
+  .menu {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    opacity: 1 ;
+    pointer-events: auto;
+  }
+  .menu a {
+    padding: 0 1rem;
+  }
+  .menu a:hover {
+    background-color: transparent;
+  }
+  .menu a:last-child {
+    padding-right: 0;
+  }
+
+}
