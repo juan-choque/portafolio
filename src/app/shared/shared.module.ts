@@ -9,8 +9,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { ServicessComponent } from './components/servicess/servicess.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModalComponent } from './components/modal/modal.component';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AboutComponent,
@@ -24,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     ModalComponent],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   exports: [
     AboutComponent,

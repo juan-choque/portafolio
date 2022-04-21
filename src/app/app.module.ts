@@ -8,7 +8,10 @@ import { AppComponent } from './app.component';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule} from '@angular/fire';
 import { firebaseConfig } from '../environments/environment.prod';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '@shared/shared.module';
+import { HomeModule } from '@modules/home/home.module';
+
 // import { firebaseConfig } from '../environments/environment';
 @NgModule({
   declarations: [
@@ -18,6 +21,10 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
+    AngularFirestoreModule,
+    SharedModule,
+    HomeModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
